@@ -479,7 +479,7 @@ LeverageScore.default <- function(
     message("Performing random projection")
   }
   JL <- as.sparse(x = JLEmbed(
-    nrow = ncol(x = R.inv),
+    nrow = ncol(x = R),
     ncol = ndims,
     eps = eps,
     seed = seed
